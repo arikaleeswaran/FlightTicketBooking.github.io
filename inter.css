@@ -1,0 +1,146 @@
+body{
+	background: rgb(0,255,251);
+	background: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(96,99,231,1) 49%, rgba(228,103,230,1) 100%);
+}
+*{
+	text-decoration: none;
+}
+.navigation{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	list-style: none;
+	background-color: #ff0000;
+	padding: 20px;
+
+}
+.navigation a{
+    color: white;
+}
+
+/* LOGO */
+.logo {
+      font-size: 40px;
+      color: white;
+      font-weight: 300;
+}
+
+/* NAVBAR MENU */
+.menu {
+      display: flex;
+      gap: 1em;
+      font-size: 18px;
+      
+}
+
+
+.menu li:hover {
+      background-color: #4F4F4F;
+      border-radius: 5px;
+      transition: 0.3s ease;
+     
+}
+
+.menu li {
+        padding: 5px 14px;
+
+}
+
+/* DROPDOWN MENU */
+.services {
+        position: relative; 
+}
+
+.dropdown {
+        background-color: palevioletred;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+}
+
+.dropdown li + li {
+        margin-top: 10px;
+}
+
+.dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+}
+
+.dropdown li:hover {
+          background-color:  #ff0000;
+}
+
+.services:hover .dropdown {
+          display: block;
+}
+.outer{
+	border: dotted;
+	border-radius: 15px;
+	margin: 20px 100px;
+	padding: 30px 30px;
+	overflow: hidden;
+	float: center;
+	align-content: center;
+	width: 500px;
+	margin-left: 350px;
+	margin-top: 80px;
+}
+.head {
+	float: center;
+	font-family: Times New Roman;
+	margin-top: 90px;
+	margin-bottom: 20px;
+
+}
+#from span{
+	font-family: Times New Roman;
+	font-size: 150%;
+	padding-top: 40px;
+}
+#from select{
+	border: none;
+	border-radius: 14px;
+
+}
+#to span{
+	font-family: Times New Roman;
+	font-size: 150%;
+	margin-right: 30px;
+}
+#tcountry{
+	border: none;
+	border-radius: 14px;
+}
+.date {
+	font-family: times new roman;
+	font-size: 150%;
+	margin: 30px 5px;
+}
+#dd{
+	border: none;
+	border-radius: 14px;
+}
+.count{
+	padding-bottom: 30px;
+}
+.count span{
+	font-family: times new roman;
+	font-size: 150%;
+}
+#acount{
+	border: none;
+	border-radius: 14px;
+}
+#ccount{
+	border: none;
+	border-radius: 14px;
+}
+.continue{
+	float: right;
+	margin: 30px;
+}
+

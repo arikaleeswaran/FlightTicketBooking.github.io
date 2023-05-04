@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="logstyle.css">
+	<script src="log.js"></script>
+	
+</head>
+<body>
+	<nav class="navigation">
+		<div class="logo"> SpiceJet</div>
+		<div class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://corporate.spicejet.com/CorporateOverview.aspx">About</a></li>
+			<ul class="dropdown" style="list-style: none;">
+				<li><a href="https://vacations.spicejet.com/">HOTEL</a></li>
+				<li><a href="https://corporate.spicejet.com/VisaServices.aspx">VISA SERVICE</a></li>
+				<li><a href="https://spicejet.bookairportcab.com/">TAXI SERVICE</a></li>
+				<li><a href="https://corporate.spicejet.com/InsuranceProductDescription.aspx">TRAVEL ASSISTANCE SERVICES</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#about">Contact</a></li>
+
+	</div>
+	</nav>
+		<form  onsubmit="return validate()" action="index.html">
+			<p>
+			<marquee behavior="scroll" direction="left" scrollamount="8" id="marquee" style="font-size: 200%; font-family: 'Times New Roman'; color: yellow;">Welcome to SPICEJET  Login for continue our services</marquee></p>	
+			<div class="box-frame">
+					<div class="left">
+						<div class="overley">
+							<h1 style="color: black; font-family: Times New Roman;">Are you ready to fly?</h1>
+							<p style="color: black;"> &nbsp;<strong>“There will be a bird today. It will be white with streaks of gold like a crown atop its head. It will fly.  ” </strong></p>
+							
+						</div>
+					</div>
+				<div class="right">
+					<h1>Login</h1>
+					<p>Don't have an account? <a href="New Acoount.html"> Create New Account</a> it takes less than a minute</p>
+					<div class="inputs">
+						<p><label for="uname">Username: <input type="text" id="uname" required></label></p>
+						<p><label for="psw">Password: <input type="password" name="pa" id="psw" required></label></p>
+					</div>
+				
+					<div class="end">
+						<button type="submit" class="lg" style="color:#000000" >Login</button>
+					</div>
+				</div>
+			</div>
+		</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Confirmation</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <nav class="navigation">
+		<div class="logo"> SpiceJet</div>
+		<div class="menu">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="https://corporate.spicejet.com/CorporateOverview.aspx">About</a></li>
+			<ul class="dropdown" style="list-style: none;">
+				<li><a href="https://vacations.spicejet.com/">HOTEL</a></li>
+				<li><a href="https://corporate.spicejet.com/VisaServices.aspx">VISA SERVICE</a></li>
+				<li><a href="https://spicejet.bookairportcab.com/">TAXI SERVICE</a></li>
+				<li><a href="https://corporate.spicejet.com/InsuranceProductDescription.aspx">TRAVEL ASSISTANCE SERVICES</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#about">Contact</a></li>
+
+	    </div>
+	</nav>
+    <form>
+    <div class="outer">
+        
+        <div class="ticket">
+            <div class="conf"><p><h1> YOUR TICKET BOOKED</h1></p></div><br>
+            <div class="left">
+                <img src="./plane png.png" height="50px" width="50px" id="flt">
+            </div>
+                <div class="right">
+                       
+                        <div class="name"><p><label id="psname">PASSENGER:<span id="name"></span> </label> <label id="flight" style="font-size: small;">FLIGHT&nbsp;&nbsp;NO:&nbsp;IT&nbsp;&nbsp;3342</label></p></div><br>
+                        <div class="place"><p><label id="from">FROM:<span id="fromplc"></span></label><label id="to">TO:<span id="toplc"></span></label></p></div><br><br>
+                        <div class="day"><p><label id="date">DATE:<span id="ddt"></span></label><label id="time">TIME:&nbsp;&nbsp;16:45</label></p></div><br><br><br>
+                        <div class="cost"><p><label>Price: <span style='font-size:50px;'>&#8377;</span><span id="price"> </span></label></p></div>
+                    
+                </div>
+            </div>
+        </div>
+</form>
+<script>
+    document.getElementById("name").innerHTML=localStorage.getItem("passenger");
+    document.getElementById("fromplc").innerHTML=localStorage.getItem("fromplace");
+    document.getElementById("toplc").innerHTML=localStorage.getItem("toplace");
+    document.getElementById("ddt").innerHTML=localStorage.getItem("ddate");
+    document.getElementById("price").innerHTML=localStorage.getItem("price");
+</script>
+</body>
+</html>

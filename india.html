@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>India</title>
+<link rel="stylesheet" type="text/css" href="india-style.css">
+<script src="india.js"></script>
+
+</head>
+<body>
+	<nav class="navigation">
+		<div class="logo"> SpiceJet</div>
+		<div class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://corporate.spicejet.com/CorporateOverview.aspx">About</a></li>
+			<ul class="dropdown" style="list-style: none;">
+				<li><a href="https://vacations.spicejet.com/">HOTEL</a></li>
+				<li><a href="https://corporate.spicejet.com/VisaServices.aspx">VISA SERVICE</a></li>
+				<li><a href="https://spicejet.bookairportcab.com/">TAXI SERVICE</a></li>
+				<li><a href="https://corporate.spicejet.com/InsuranceProductDescription.aspx">TRAVEL ASSISTANCE SERVICES</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#about">Contact</a></li>
+
+	</div>
+	</nav>
+	<div class="head"><h1>DOMESTIC JOURNEY</h1></div>
+	<div class="outline">
+		<!-- India-->
+		<form onsubmit="return values()" action="ticket-confirmation.html">
+
+			<div class="type">
+				<div class="from"><span>FROM:</span>&nbsp;
+					<select name="fcountry" id="fc" required>
+						<option></option>
+						<option>Agra</option>
+						<option>Ahmedabad</option>
+						<option>Bengaluru</option>
+						<option>Chennai</option>
+						<option>Coimbatore</option>
+						<option>Delhi</option>
+						<option>Goa</option>
+						<option>Hyderabad</option>
+						<option>Kolkata</option>
+						<option>Mumbai</option>
+						<option>Pondicherry</option>
+						<option>Thiruvananthapuram</option>
+						<option>Tirupati</option>
+						<option>Varanasi</option>
+						<option>Vishakhapatnam</option>
+					</select>
+				</div>
+			<div class="to"><span>TO:</span>&nbsp;
+				<select name="tcountry" id="tc" required>
+					<option></option>
+					<option>Agra</option>
+					<option>Ahmedabad</option>
+					<option>Bengaluru</option>
+					<option>Chennai</option>
+					<option>Coimbatore</option>
+					<option>Delhi</option>
+					<option>Goa</option>
+					<option>Hyderabad</option>
+					<option>Kolkata</option>
+					<option>Mumbai</option>
+					<option>Pondicherry</option>
+					<option>Thiruvananthapuram</option>
+					<option>Tirupati</option>
+					<option>Varanasi</option>
+					<option>Vishakhapatnam</option>
+				</select>
+			</div>
+		
+		
+		
+			<div class="departure" id="dpt1">
+				<label><span>Departure Date:</span><input type="date" name="dptdate" id="dpt" required /></label>
+			</div>
+		
+	
+			<div class="count" >
+				<br>
+			<span>Passengers</span>&nbsp;
+			<label id="adult" >&nbsp;<span>Adult</span>&nbsp;
+				<select name="Adult"required id="count-a">
+					<option disabled>more than 12</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+			</label>
+			<label id="child">&nbsp;Children&nbsp;
+				<select name="Children" id="count-c" required>
+					<option disabled>2-12 years</option>
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+			</label><br><br>
+			<div class="continue">
+				<button style="align-items:right" type="submit">Continue</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

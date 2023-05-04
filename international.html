@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>International</title>
+	<link rel="stylesheet" type="text/css" href="inter.css">
+	<script src="inter.js"></script>
+</head>
+<body>
+	<nav class="navigation">
+		<div class="logo"> SpiceJet</div>
+		<div class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://corporate.spicejet.com/CorporateOverview.aspx">About</a></li>
+			<ul class="dropdown" style="list-style: none;">
+				<li><a href="https://vacations.spicejet.com/">HOTEL</a></li>
+				<li><a href="https://corporate.spicejet.com/VisaServices.aspx">VISA SERVICE</a></li>
+				<li><a href="https://spicejet.bookairportcab.com/">TAXI SERVICE</a></li>
+				<li><a href="https://corporate.spicejet.com/InsuranceProductDescription.aspx">TRAVEL ASSISTANCE SERVICES</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#about">Contact</a></li>
+
+	</div>
+	</nav>
+		<!-- International-->
+	<div class="head"><h1 style="text-align: center; ">INTERNATIONAL JOURNEY</h1></div>
+	<div class="outer">
+		<form action="ticket-confirmation.html">
+			
+			
+			<div id="from"><label><span>FROM:</span>&nbsp;
+				<select name="from" id="fc" required>
+					<option></option>
+					<option>Ahmedabad</option>
+					<option>Bengaluru</option>
+					<option>Calicut</option>
+					<option>Chennai</option>
+					<option>Guwahati</option>
+					<option>Delhi</option>
+					<option>Hyderabad</option>
+					<option>Mumbai</option>
+				</select>
+			</label>
+		</div><br><br>
+			<div id="to"><label><span>TO:</span>&nbsp;
+				<select name="to" id="tc" required>
+					<option></option>
+					<option>Armenia</option>
+					<option>Bangkok</option>
+					<option>Colombo</option>
+					<option>Dubai</option>
+					<option>France</option>
+					<option>Italy</option>
+					<option>Malaysia</option>
+					<option>Singapore</option>
+				</select>
+			</label>
+		</div>
+		</form>
+
+	<div class="date" required>
+		<form>
+			<label id="ddate"><span>Departure Date:</span>&nbsp;&nbsp;<input type="date" name="dptdate" id="dpt" /></label>
+		</form>
+	</div>
+	<div class="count" >
+		<form><span>
+			Passengers: </span>&nbsp;
+			<label id="Adult"><span>Adult</span>
+				<select name="Adult" id="count-a" required>
+					<option disabled>12+ Year</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+			</label>
+			<label id="children">&nbsp;<span>Children</span>&nbsp;
+				<select name="Children" id="count-c" required>
+					<option disabled>2-12 Years</option>
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+			</label>
+			<div class="continue"><button onclick="values();"><a href="ticket-confirmation.html">Continue</a></button></div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
